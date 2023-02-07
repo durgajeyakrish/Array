@@ -8,21 +8,30 @@
 </head>
 <body>
 <script>
-		function changeArray(array){
-			let arr= array.length,
-				i;
-			for (i = arr- 1; i > 0;i--){
-				let random = Math.floor(Math.random() * (i + 1) );
-				var temp = array[i];
-				array[i] = array[random];
-				array[random] = temp;
-			}
-		}
-		let a = [1,2,3,4,5];
-		console.log("Array before Shuffling", a);
-		changeArray(a);
-		console.log("Array after Shuffling", a);
-		
+
+	let employees = [
+   {
+       "id": 11,
+       "name":"Abhinav",
+       "salary":75000
+   },
+   {
+       "id": 2131,
+       "name":"Gaurav",
+       "salary":62000
+   },
+   {
+       "id": 3012,
+       "name":"Raj",
+       "salary":32000
+   }]
+   let sal=employees.map(function(value){
+    return value.salary
+   });
+   console.log(sal);
+   let val=sal.sort();
+   console.log(val);
+   
 </script>
 </body>
 </html>
