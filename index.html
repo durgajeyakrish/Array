@@ -105,6 +105,35 @@
 	   }
 	}
 	console.log(tem);
+	
+	
+	var value =[1,2,3,4,5,4,3,2];
+	function remove(array){
+     var result= [];
+     for(i=0; i < array.length; i++){
+         if(result.indexOf(array[i]) === -1){
+             result.push(array[i]);
+         }
+     }
+     return result;
+	}
+console.log(remove(value));
+
+
+let arr = [1,2,3,5,4,3,4,5]
+function removeDuplicate(arr){
+    let result = [];
+    for (let i=0; i< arr.length; i++){
+        if(result.length === 0){
+            result.push(arr[i]);
+        }
+        if(result.indexOf(arr[i]) === -1){
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+console.log(removeDuplicate(arr));
 </script>
 </body>
 </html>
